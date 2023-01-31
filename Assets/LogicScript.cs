@@ -11,6 +11,10 @@ public class LogicScript : MonoBehaviour
     public GameObject gameOverScreen;
     public bool isRunning = true;
 
+    public AudioClip PointSFX;
+    public AudioClip gameOverSFX;
+    public AudioSource SFX;
+
     void Start() {
         gameOverScreen.SetActive(false);
     }
@@ -20,6 +24,7 @@ public class LogicScript : MonoBehaviour
     public void addPlayerScore(){
         playerScore += 1;
         scoreCounter.text = playerScore.ToString();
+        SFX.PlayOneShot(PointSFX);
     }
 
     public void resetLevel(){
@@ -29,6 +34,8 @@ public class LogicScript : MonoBehaviour
     public void gameOver(){
         gameOverScreen.SetActive(true);
         isRunning = false;
+        SFX.PlayOneShot(gameOverSFX);
+
 
     }
 }
