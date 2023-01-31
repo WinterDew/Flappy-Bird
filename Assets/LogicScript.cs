@@ -14,9 +14,12 @@ public class LogicScript : MonoBehaviour
     public AudioClip PointSFX;
     public AudioClip gameOverSFX;
     public AudioSource SFX;
+    
+    public ParticleSystem Clouds;
 
     void Start() {
         gameOverScreen.SetActive(false);
+        Clouds.Play();
     }
 
 
@@ -35,7 +38,7 @@ public class LogicScript : MonoBehaviour
         gameOverScreen.SetActive(true);
         isRunning = false;
         SFX.PlayOneShot(gameOverSFX);
-
+        Clouds.Pause();
 
     }
 }
