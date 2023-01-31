@@ -10,7 +10,7 @@ Trying to learn Unity one step at a time.
 - [X] [Basic Game](https://github.com/CoderTatva-2006/Flappy-Bird/commit/7bfcb1d9e428ac2030c4decc42f104203c285955)
 - [X] [Screen collisions](https://github.com/CoderTatva-2006/Flappy-Bird/commit/092914acdad56abdcf96c068c6d33c371c672adc) 
 - [X] [Sounds Effects](https://github.com/CoderTatva-2006/Flappy-Bird/commit/e6588408180945c04eaa2b05a17a38717b7971a5)
-- [] Cloud particle system
+- [X] [Cloud particle system](https://github.com/CoderTatva-2006/Flappy-Bird/commit/de2686d81a7e3138de1a0b8e15987de77f28bf95)
 - [] Flapping wings for bird
 - [] Title scene
 - [] Save High score
